@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option java_package = "com.geethakr.porsche.protobuf";
+option java_outer_classname = "SensorDataProto";
+
+message SensorData {
+  float pressure = 1;
+  bool lights_on = 2;
+  float tpms = 3;
+  float temperature = 4;
+  int32 fuel_level = 5;
+}
