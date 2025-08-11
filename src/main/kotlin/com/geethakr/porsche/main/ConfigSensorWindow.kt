@@ -22,10 +22,6 @@ fun configureSensorsWindow(sensorData: MutableState<SensorData?>, coroutineScope
     val lightsOn = remember { mutableStateOf(sensorData.value?.lightsOn ?: false) }
     val fuelLevel = remember { mutableStateOf(sensorData.value?.fuelLevel ?: 50) }
 
-
-    val realTimeTemperature = Weather
-
-
     Column(
         modifier = Modifier.padding(24.dp).fillMaxWidth(),
         verticalArrangement = Arrangement.spacedBy(16.dp)
